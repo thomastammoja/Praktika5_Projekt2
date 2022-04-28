@@ -9,12 +9,12 @@ module.exports = function (app) {
             res.set('Access-Control-Allow-Origin', '*')
 
             // Take values from request body
-            const { name } = req.body;
+            const { city } = req.body;
             const { country_id } = req.body;
 
             const newCity = await pool.query(
                 "INSERT INTO world.cities (name, country_id) VALUES ($1, $2) RETURNING *",
-                [name, country_id]
+                [city, country_id]
             );
             // Send response back to user
             res.json(newCity.rows[0]);
