@@ -11,10 +11,12 @@ module.exports = function (app) {
             // Take values from request body
             const { city } = req.body;
             const { country_id } = req.body;
+            const { longitude } = req.body;
+            const { latitude } = req.body;
 
             const newCity = await pool.query(
-                "INSERT INTO world.cities (name, country_id) VALUES ($1, $2) RETURNING *",
-                [city, country_id]
+                "INSERT INTO world.cities (name, country_id, longitude, latitude) VALUES ($1, $2, $3, $4) RETURNING *",
+                [city, country_id, longitude, latitude]
             );
             // Send response back to user
             res.json(newCity.rows[0]);
