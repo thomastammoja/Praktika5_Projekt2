@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thomastammoja/Praktika5.git"
+    "url": "git+https://github.com/thomastammoja/Praktika5_Projekt2.git"
   },
   "author": "Thomas Tammoja",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/thomastammoja/Praktika5/issues"
+    "url": "https://github.com/thomastammoja/Praktika5_Projekt2/issues"
   },
-  "homepage": "https://github.com/thomastammoja/Praktika5#readme",
+  "homepage": "https://github.com/thomastammoja/Praktika5_Projekt2/tree/master/backend#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.0",
