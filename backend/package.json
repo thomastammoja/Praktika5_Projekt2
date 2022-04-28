@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Projekt maailma riigid backend (server)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomastammoja/Praktika5.git"
+  },
+  "author": "Thomas Tammoja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomastammoja/Praktika5/issues"
+  },
+  "homepage": "https://github.com/thomastammoja/Praktika5#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.0",
+    "pg": "^8.7.3"
+  }
+}
